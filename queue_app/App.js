@@ -14,16 +14,12 @@ import {NavigationContainer} from '@react-navigation/native';
 import HomeScreen from './root/screens/HomeScreen';
 import store from './root/store';
 
-
 const App: () => Node = () => {
-
   return (
     <Provider store={store}>
-      <NavigationContainer>
-        <NativeBaseProvider>
-          <HomeScreen />
-        </NativeBaseProvider>
-      </NavigationContainer>
+      <NativeBaseProvider>
+        <HomeScreen />
+      </NativeBaseProvider>
     </Provider>
   );
 };

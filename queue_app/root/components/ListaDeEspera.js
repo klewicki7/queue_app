@@ -37,7 +37,7 @@ function ListaDeEspera({lista}) {
           opacity={0.96}
           shadow={'9'}>
           {Object.keys(turnos).map(e => (
-            <Fila data={turnos[e]} lista={e} />
+            <Fila key={e} data={turnos[e]} lista={e} />
           ))}
         </VStack>
       </PresenceTransition>
