@@ -5,18 +5,18 @@ function ResumenPacientes({lista}) {
   return (
     <Center>
       <Box
-        width={'24'}
-        height={'16'}
+        width={'32'}
+        height={'20'}
         rounded={'lg'}
         _text={{textAlign: 'center'}}
         p={2}
-        bg={'red.400'}
+        bg={'#1c2c2c'}
         alignItems={'center'}
         justifyContent={'center'}>
-        <Text fontWeight={'bold'} textAlign={'center'}>
+        <Text fontWeight={'bold'} textAlign={'center'} color={'white'}>
           {lista.filaUno?.length + lista.filaDos?.length}
         </Text>
-        <Text fontSize={'12'} textAlign={'center'}>Pacientes en espera</Text>
+        <Text color={'white'}fontSize={'12'} textAlign={'center'}>Pacientes en espera</Text>
       </Box>
     </Center>
   );
